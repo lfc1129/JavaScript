@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>table插件</title>
+</head>
+<style type="text/css">
+	table{ width: 200px; min-height: 25px; line-height: 25px; text-align: center; border-color:#b6ff00; border-collapse: collapse;}
+	table tr{padding: 0;margin: 0;}
+	table tr td{border:1px solid #ccc;width:20px;height: 20px}
+	table tr.odd{background: red;}
+	table tr.even{background: blue;}
+	table tr.current{background: yellow;}
+</style>
+<body>
+
+<table border="1" cellspacing="0" id="table">
+	<tr>
+		<td>1</td>
+		<td>2</td>
+		<td>3</td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>5</td>
+		<td>6</td>
+	</tr>
+	<tr>
+		<td>7</td>
+		<td>8</td>
+		<td>9</td>
+	</tr>
+</table>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-table-1.0.js"></script>
+<script type="text/javascript">
+	$("#table").table({
+		eventType:'click'
+	})
+</script>
+</body>
+</html>
